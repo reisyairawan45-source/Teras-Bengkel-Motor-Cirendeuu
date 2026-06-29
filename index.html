@@ -1,0 +1,228 @@
+<!doctype html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teras Bengkel Motor TBM Service & Repair</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0f766e;--accent-2:#06b6d4;--muted:#6b7280;--card:#ffffff}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+    body{background:#f8fafc;color:#0f172a;line-height:1.45}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px}
+    .hero h1{font-size:28px;margin-bottom:12px}
+    .hero p.lead{color:var(--muted);margin-bottom:16px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ws{background:#25D366;color:#fff}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+    .info-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+    .service{padding:14px;border-radius:10px;background:#fff;box-shadow:0 4px 14px rgba(2,6,23,0.04);text-align:center}
+    .map{height:220px;border-radius:10px;overflow:hidden;margin-top:12px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    footer{margin-top:36px;padding:18px 0;color:var(--muted);text-align:center}
+    form label{display:block;font-weight:600;margin-top:10px;margin-bottom:6px}
+    input,textarea,select{width:100%;padding:10px;border:1px solid #e6e9ef;border-radius:8px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .service-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      nav{display:none}
+      .service-grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">TBM</div>
+        <div>
+          <div style="font-weight:800">Teras Bengkel Motor TBM</div>
+          <div style="font-size:13px;color:var(--muted)">Service & Repair — Cireundeu, Ciputat Timur</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#layanan">Layanan</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#booking">Booking</a>
+      </nav>
+    </header><main>
+  <section class="hero">
+  <div>
+
+    <img src="logoooo.jpeg"
+         alt="Teras Bengkel Motor"
+         width="100%"
+         height="350"
+         style="border-radius:15px;object-fit:cover;margin-bottom:20px;">
+
+    <h1>TBM Teras Bengkel Motor — Servis Cepat, Tepat, dan Terpercaya</h1>
+
+    <p class="lead">
+      Kami adalah bengkel motor profesional dengan teknisi berpengalaman, peralatan modern, dan pelayanan ramah. Pastikan motor Anda selalu prima — cepat, aman, dan tanpa biaya tersembunyi.
+    </p>
+
+
+      <div class="card">
+        <strong>Slogan:</strong>
+        <div style="margin-top:8px;font-weight:700">Provide Quality Repair Services with Maximum Results</div>
+
+        <div class="info-list">
+          <div>
+            <small style="color:var(--muted)">Alamat</small>
+            <div style="font-weight:700">Kp. Poncol Indah V No. 70, RT 003 / RW 002<br>Kelurahan Cireundeu, Kecamatan Ciputat Timur<br>Kota Tangerang Selatan</div>
+          </div>
+          <div>
+            <small style="color:var(--muted)">Kontak & Jam</small>
+            <div style="font-weight:700">WA: <a href="https://wa.me/6281315709338" style="color:var(--accent);text-decoration:none">0813-1570-9338</a><br>Jam: Senin–Sabtu 09:00–18:00</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px" class="cta">
+          <button class="btn btn-primary" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Booking Servis</button>
+          <a class="btn btn-ws" href="https://wa.me/6281315709338" target="_blank">Chat via WhatsApp</a>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+        <h3 id="layanan">Layanan Unggulan</h3>
+        <div class="service-grid">
+          <div class="service">Servis Ringan & Berat</div>
+          <div class="service">Ganti Oli & Tune Up</div>
+          <div class="service">Perbaikan Rem & Aki</div>
+          <div class="service">Perbaikan Injeksi & Kelistrikan</div>
+          <div class="service">Suku Cadang & Konsultasi</div>
+          <div class="service">Servis Berkala & Paket Hemat</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+
+      <div class="card">
+        <h4 style="margin-bottom:8px">Harga & Transparansi</h4>
+        <p style="color:var(--muted);font-size:14px">Estimasi harga akan diinformasikan setelah pemeriksaan. Kami berkomitmen pada harga yang jujur dan tanpa biaya tersembunyi.</p>
+
+        <h4 style="margin-top:12px">Cara Booking Mudah</h4>
+        <ol style="padding-left:16px;color:var(--muted)">
+          <li>Isi formulir booking di bawah</li>
+          <li>Kami konfirmasi via WhatsApp</li>
+          <li>Datang ke bengkel atau tunggu layanan antar-jemput (opsional)</li>
+        </ol>
+
+        <div class="map">
+          <iframe width="100%" height="100%" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kp.%20Poncol%20Indah%20V%20No.%2070%20Cireundeu%20Ciputat%20Timur%20Tangerang%20Selatan&output=embed" allowfullscreen></iframe>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Kontak Darurat:</strong>
+          <div style="margin-top:6px">WA/Telepon: <a href="https://wa.me/6281315709338">0813-1570-9338</a></div>
+          <div style="margin-top:6px">Jam Operasional: 09:00 - 18:00 WIB (Senin–Sabtu)</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h4>Testimoni</h4>
+        <blockquote style="color:var(--muted);font-size:14px">“Servis cepat dan hasilnya mantap. Mekaniknya profesional!” — Riky Jhons</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“Harga transparan, recommended!” — Delvi Ardi</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“Harga transparan, recommended, pelayannan juga ramah dan cepat!” — Muizzul Mahdi</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“alhamdulilah motor bisa nyala lagi abis dari bengkel ini, solusi buat yang motornya bermasalah bisa kesini aja,  sukses terus ya buat teras motor!” — rifqi</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“Bengkel nya mantap dari segi service nya, produk sparepart ORI, ada suguhan kopi nya pula sembari menunggu 😊 …!” — rakha priyana</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“Terampil dan pelayanan mantapp!!” — rhesa manuel</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“👍 ane sudah merasakan servicenya no kaleng" (kualitas & kepuasan customer 👍 …!” — madih diun</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“Bengkel Motor dekat Kampus UMJ, servis memuaskan dengan mekanik terampil!” — suka pegi pegi</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“Mantap, servis motor memuaskan!” — azis ayubi</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“Good service 👍 !” — lukman hakim</blockquote>
+        <blockquote style="color:var(--muted);font-size:14px">“Mantap, servis motor memuaskan!” — rizki  irawan</blockquote>
+      </div>
+    </aside>
+  </section>
+
+  <section id="galeri" style="margin-top:28px">
+    <h3>Galeri</h3>
+    <p style="color:var(--muted);margin-top:6px">Foto suasana bengkel dan beberapa hasil servis (placeholder).</p>
+    <div class="gallery" style="margin-top:12px">
+      <img src="teras motor.jpeg" alt="Galeri 1">
+      <img src="aki motor.jpeg" alt="Galeri 2">
+      <img src="bengkel motor.jpg" alt="Galeri 3">
+      <img src="https://via.placeholder.com/600x400?text=Foto+Bengkel+4" alt="Galeri 1">
+      <img src="https://via.placeholder.com/600x400?text=Foto+Bengkel+5" alt="Galeri 2">
+      <img src="https://via.placeholder.com/600x400?text=Foto+Bengkel+6" alt="Galeri 3">
+    </div>
+  </section>
+
+  <section id="booking" style="margin-top:28px">
+    <h3>Booking Servis</h3>
+    <p style="color:var(--muted);margin-top:6px">Isi formulir di bawah, lalu klik <strong>Pesan via WhatsApp</strong> untuk mengirim detail booking ke kami.</p>
+
+    <div class="card" style="margin-top:12px">
+      <form id="bookingForm" onsubmit="return sendBooking(event)">
+        <label for="name">Nama</label>
+        <input id="name" name="name" placeholder="Nama lengkap" required>
+
+        <label for="phone">Nomor HP / WhatsApp</label>
+        <input id="phone" name="phone" placeholder="08xx" required>
+
+        <label for="motor">Merek & Tipe Motor</label>
+        <input id="motor" name="motor" placeholder="Contoh: Honda Beat 2018" required>
+
+        <label for="service">Jenis Servis</label>
+        <select id="service" name="service">
+          <option>Servis Ringan</option>
+          <option>Servis Berat</option>
+          <option>Ganti Oli</option>
+          <option>Tune Up</option>
+          <option>Perbaikan Rem / Aki</option>
+          <option>Kelistrikan / Injeksi</option>
+        </select>
+
+        <label for="notes">Catatan / Keluhan</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Deskripsikan keluhan singkat"></textarea>
+
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <button type="submit" class="btn btn-primary">Pesan via WhatsApp</button>
+          <button type="reset" class="btn" style="background:#eef2ff">Reset</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© <strong>Teras Motor TBM Service & Repair</strong> — Kp. Poncol Indah V No.70, Cireundeu, Ciputat Timur, Tangerang Selatan</div>
+  <div style="margin-top:6px">Kontak: <a href="https://wa.me/6281315709338">0813-1570-9338</a></div>
+</footer>
+
+  </div>  <script>
+    function sendBooking(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const motor = document.getElementById('motor').value.trim();
+      const service = document.getElementById('service').value;
+      const notes = document.getElementById('notes').value.trim();
+
+      const msg = Booking Servis:%0ANama: ${encodeURIComponent(name)}%0ANo: ${encodeURIComponent(phone)}%0AMotor: ${encodeURIComponent(motor)}%0AJenis Servis: ${encodeURIComponent(service)}%0ACatatan: ${encodeURIComponent(notes)};
+      const waNumber ="6281315709338";
+      window.open(wa, '_blank');
+      return false;
+    }
+  </script></body>
+</html>
